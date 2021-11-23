@@ -18,7 +18,17 @@
 ### Project Sections
 
 1. **Toolbar**
+
 ![Screenshot](./src/project_toolbar.PNG)
 
 2. **Headline**
+
 ![Screenshot](./src/project_headline.PNG)
+
+3. **Work Cards Section**
+
+![Screenshot](./src/project_cards.PNG)
+
+4. **About Myself Section**
+
+![Screenshot](./src/project_about_section.PNG)

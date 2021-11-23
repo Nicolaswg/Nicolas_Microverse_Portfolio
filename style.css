@@ -247,3 +247,321 @@ body {
 .peace:hover {
   transform: scale(1.2);
 }
+
+/* work section placeholder */
+.work-projects {
+  height: 580px;
+  margin: 100px 24px;
+  border-radius: 16px;
+  display: grid;
+  gap: 1px;
+  grid-template-areas: 'header header header' 'description description description' 'footer footer footer';
+}
+
+/* work grid items */
+.item {
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* grid item header */
+.project-header {
+  grid-area: header;
+  padding: 20px 20px 10px;
+  height: 100%;
+}
+
+/* my grid item header */
+.project-img-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: #fa9c66;
+  border-radius: 8px;
+}
+
+.project-img-container-b {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6ead4;
+  border-radius: 8px;
+}
+
+.project-img-container-c {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 8px;
+}
+
+.header-img {
+  width: 100%;
+  height: 90%;
+  padding: 15px;
+}
+
+.header-img-b {
+  width: 100%;
+  height: 100%;
+}
+
+/* grid item description */
+.project-description {
+  grid-area: description;
+  padding: 10px;
+}
+
+/* description placeholder */
+.project-title-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* my grid title items */
+.description-title {
+  width: 100%;
+  padding-left: 12px;
+  font-size: 25px;
+}
+
+/* my grid subtitle items  */
+.project-subtitle-container {
+  width: 100%;
+}
+
+.subtitle-items {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding-left: 16px;
+}
+
+.list-less {
+  list-style: none;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.list {
+  font-size: 13px;
+  opacity: 0.5;
+}
+
+.list::marker {
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+/* my grid description text */
+.project-article-container {
+  width: 100%;
+  margin-top: 10px;
+  padding-left: 16px;
+}
+
+/* my grid footer tag item */
+.project-tag-container {
+  width: 100%;
+  margin-top: 20px;
+  padding-left: 25px;
+}
+
+.tag-item {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  list-style: none;
+  color: #6070ff;
+}
+
+.tag-btn {
+  text-decoration: none;
+  padding: 4px 12px;
+  background-color: #d9d9f5;
+  border-radius: 8px;
+  opacity: 0.5;
+  color: #6070ff;
+}
+
+/* project buttom placeholder */
+.project-buttom-container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  padding-left: 14px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* my grid footer buttom */
+.project-buttom {
+  padding: 10px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  font-size: 17px;
+  background-color: transparent;
+  color: #396df2;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 500ms ease;
+}
+
+.project-buttom:hover {
+  background-color: #6070ff;
+  opacity: 0.7;
+  color: #fff;
+}
+
+.project-buttom-b {
+  padding: 10px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  font-size: 17px;
+  background-color: transparent;
+  color: #396df2;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 500ms ease;
+}
+
+.project-buttom-b:hover {
+  background-color: #6070ff;
+  opacity: 0.7;
+  color: #fff;
+}
+
+/* about myself placeholder */
+.about-project {
+  width: 100%;
+  margin: 2px;
+  background-color: #fff;
+  border-top-right-radius: 100px;
+  padding: 10px 10px 100px 10px;
+}
+
+/* my about myself title */
+.about-title-container {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 114px 24px 0;
+  align-items: flex-start;
+}
+
+.about-title {
+  font-size: 40px;
+  color: #172b4d;
+}
+
+/* my about myself description */
+.about-description-container {
+  margin: 10px 15px 0;
+}
+
+/* about knowledge placeholder */
+.about-knowledge-container {
+  margin: 10px 16px;
+}
+
+.skill-container {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0 20px 0;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #dfe1e6;
+  position: relative;
+}
+
+.skill-container#active {
+  border: none;
+}
+
+.skill-title li {
+  list-style: none;
+}
+
+.link-skill {
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
+}
+
+/* my list vector-icon */
+
+.vector-icon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 16.5px;
+  right: 10px;
+  background-color: #6171ff;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  cursor: pointer;
+}
+
+.code-langguage-container {
+  width: 100%;
+}
+
+.code-items {
+  display: flex;
+  margin-top: 5px;
+  flex-direction: column;
+}
+
+.code {
+  margin: 10px;
+  padding: 10px;
+  background-color: #f7f7f9;
+  list-style: none;
+  border-radius: 10px;
+}
+
+.code-template {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.code-img-a {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin: 2px;
+  background-image: url(src/code_icon_a.PNG);
+  background-size: cover;
+}
+
+.code-img-b {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin: 2px;
+  background-image: url(src/code_icon_b.PNG);
+  background-size: cover;
+}
+
+.code-img-c {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin: 2px;
+  background-image: url(src/code_icon_c.PNG);
+  background-size: cover;
+}
