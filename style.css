@@ -648,7 +648,7 @@ body {
   transition: background-color 500ms ease;
 }
 
-button.contact-button:hover {
+.contact-button:hover {
   background: #6070ff;
   color: #fff;
 }
@@ -656,14 +656,4 @@ button.contact-button:hover {
 button.contact-button:active {
   background: #2230d2;
   color: #fff;
-}
-
-button.contact-button:enabled {
-  background: #fff;
-  color: #6070ff;
-}
-
-button.contact-button:disabled {
-  border: 1px solid #c1c7d0;
-  color: #5e6c84;
 }
