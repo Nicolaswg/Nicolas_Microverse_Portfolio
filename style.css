@@ -647,3 +647,23 @@ body {
   cursor: pointer;
   transition: background-color 500ms ease;
 }
+
+button.contact-button:hover {
+  background: #6070ff;
+  color: #fff;
+}
+
+.contact-button:active {
+  background: #2230d2;
+  color: #fff;
+}
+
+.contact-button:enabled {
+  background: #fff;
+  color: #6070ff;
+}
+
+.contact-button:disabled {
+  border: 1px solid #c1c7d0;
+  color: #5e6c84;
+}
