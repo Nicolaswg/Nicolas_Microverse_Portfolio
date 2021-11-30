@@ -331,18 +331,25 @@
               placeholder="Name"
               class="input-client-info"
               name="full-name"
+              minlength="2"
+              maxlength="30"
+              required
             />
             <input
               type="email"
               name="email"
               placeholder="example@gmail.com"
               class="input-client-info"
+              required
             />
             <textarea
               name="message"
               id="message"
               placeholder="right your message here"
               class="client-message"
+              minlength="10"
+              maxlength="500"
+              required
             >
             </textarea>
             <div class="button-container">
