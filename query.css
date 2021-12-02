@@ -96,4 +96,55 @@
   .link {
     color: #7f8cff;
   }
+
+  .work-projects {
+    border-radius: 25px;
+    display: flex;
+    margin: 50px 150px 100px 150px;
+    padding: 10px;
+    transition: box-shadow 450ms ease-in-out;
+    transition: transform 350ms ease-in;
+  }
+
+  .work-projects-b {
+    border-radius: 25px;
+    display: flex;
+    margin: 50px 150px 100px 150px;
+    padding: 10px;
+    height: 550px;
+    flex-direction: row-reverse;
+    transition: box-shadow 450ms ease-in-out, transform 350ms ease-in;
+  }
+
+  .card-content {
+    flex-grow: 1;
+    height: 100%;
+  }
+
+  .project-description {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    height: 100%;
+  }
+
+  .description-title {
+    padding: 12px;
+    font-size: 36px;
+  }
+
+  .description-item-b {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #344563;
+    letter-spacing: 0;
+  }
+
+  .project-article-container {
+    margin-top: 40px;
+  }
+
+  
 }
