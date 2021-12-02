@@ -123,7 +123,7 @@
   }
 
   .work-projects-b:hover {
-    box-shadow: 0 0 0 2px #6070ff, 3px 3px 6px rgb(85, 84, 84);
+    box-shadow: 0 0 0 3px #6070ff, 3px 3px 6px #555454;
     transform: translateY(-20px);
   }
 
