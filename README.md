@@ -32,3 +32,27 @@
 4. **About Myself Section**
 
 ![Screenshot](./src/project_about_section.PNG)
+
+5. **Contact Section**
+
+![Screenshot](./src/project_contact_section.PNG)
+
+## Authors
+
+👤 **Nicolas Gonzalez**
+
+-Github: [Github](https://github.com/Nicolaswg)
+-LinkedIn: [LinkedIn](https://www.linkedin.com/in/nicolas-gonzalez-8623461a0/)
+-Twitter: [Twitter](https://twitter.com/Nicolas54146830)
+
+## Live Page
+[Portfolio-webpage](https://nicolaswg.github.io/Nicolas_Microverse_Portfolio/)
+
+## 🤝 Contributing
+
+#### Contributors:
+👤 **Kemigabo Catherine**
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/Nicolaswg/Nicolas_Microverse_Portfolio/issues)
