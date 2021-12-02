@@ -1,4 +1,4 @@
-/*Large mobile screen*/
+/* Large mobile screen */
 @media only screen and (max-width: 992px) {
   .menu-links {
     display: none;
@@ -12,6 +12,7 @@
     height: 250px;
     border-radius: 5px;
   }
+
   .header-img-b {
     height: 250px;
   }
@@ -213,4 +214,5 @@
   .contact-form {
     width: 35%;
   }
+
 }
