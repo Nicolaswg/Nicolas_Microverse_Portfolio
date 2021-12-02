@@ -153,12 +153,12 @@
 
   .about-items-a {
     flex-grow: 1;
-    width: 50%;
+    width: 40%;
   }
 
   .about-items-b {
     flex-grow: 1;
-    width: 50%;
+    width: 60%;
     justify-content: flex-start;
     margin: 50px 100px 0 0;
   }
