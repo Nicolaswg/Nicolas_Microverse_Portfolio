@@ -1,0 +1,24 @@
+/*Large mobile screen*/
+@media only screen and (max-width: 600px) {
+  .menu-links {
+    display: none;
+  }
+
+  .work-projects {
+    height: 600px;
+  }
+
+  .header-img-a {
+    height: 250px;
+    border-radius: 5px;
+  }
+  .header-img-b {
+    height: 250px;
+  }
+
+  .contact-container {
+    background-size: auto;
+  }
+}
+
+/* Desktop query portfolio version */
