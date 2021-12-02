@@ -146,5 +146,43 @@
     margin-top: 40px;
   }
 
-  
+  .about-project {
+    display: flex;
+  }
+
+  .about-items-a {
+    flex-grow: 1;
+    width: 50%;
+  }
+
+  .about-items-b {
+    flex-grow: 1;
+    width: 50%;
+    justify-content: flex-start;
+    margin: 50px 100px 0 0;
+  }
+
+  .about-description-conatiner {
+    width: 100%;
+  }
+
+  .skill-container {
+    margin: 40px 0;
+  }
+
+  .code-items {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .code-template {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+
+  .code {
+    width: 200px;
+    height: 150px;
+  }
 }
