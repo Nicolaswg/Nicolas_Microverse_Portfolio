@@ -107,6 +107,11 @@
     transition: transform 350ms ease-in;
   }
 
+  .work-projects:hover {
+    box-shadow: 0 0 0 3px #6070ff, 3px 3px 6px #555454;
+    transform: translateY(-20px);
+  }
+
   .work-projects-b {
     border-radius: 25px;
     display: flex;
@@ -115,6 +120,11 @@
     height: 550px;
     flex-direction: row-reverse;
     transition: box-shadow 450ms ease-in-out, transform 350ms ease-in;
+  }
+
+  .work-projects-b:hover {
+    box-shadow: 0 0 0 2px #6070ff, 3px 3px 6px rgb(85, 84, 84);
+    transform: translateY(-20px);
   }
 
   .card-content {
