@@ -185,4 +185,32 @@
     width: 200px;
     height: 150px;
   }
+
+  .contact-container {
+    background-size: auto;
+  }
+
+  .contact-description-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-description {
+    width: 33%;
+    text-align: center;
+  }
+
+  .form-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-form {
+    width: 35%;
+  }
 }
