@@ -1,4 +1,4 @@
-# Mobile_Portfolio_Version
+# Personal Portfolio
 
 >This is the second Project from the Module-1 'The Portal' using HTML and CSS
 
@@ -15,7 +15,7 @@
 
 ## Project Screenshot
 
-### Project Sections
+### Project Mobile Sections
 
 1. **Toolbar**
 
@@ -37,6 +37,9 @@
 
 ![Screenshot](./src/project_contact_section.PNG)
 
+## Live Page
+-check my web-page: [Portfolio-webpage](https://nicolaswg.github.io/Nicolas_Microverse_Portfolio/)
+
 ## Authors
 
 👤 **Nicolas Gonzalez**
@@ -44,9 +47,6 @@
 -Github: [Github](https://github.com/Nicolaswg)
 -LinkedIn: [LinkedIn](https://www.linkedin.com/in/nicolas-gonzalez-8623461a0/)
 -Twitter: [Twitter](https://twitter.com/Nicolas54146830)
-
-## Live Page
-[Portfolio-webpage](https://nicolaswg.github.io/Nicolas_Microverse_Portfolio/)
 
 ## 🤝 Contributing
 
