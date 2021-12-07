@@ -52,13 +52,13 @@
     transition: color 250ms ease;
   }
 
-  .menu-links>a {
+  .menu-links > a {
     font-size: 1rem;
     text-decoration: none;
     color: #030303;
   }
 
-  .menu-links>a:hover {
+  .menu-links > a:hover {
     color: #6070ff;
   }
 
