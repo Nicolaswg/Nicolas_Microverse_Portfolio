@@ -55,11 +55,13 @@
   .menu-links > a {
     font-size: 1rem;
     text-decoration: none;
+    font-weight: 500;
     color: #030303;
+    transition: color 200ms ease-out;
   }
 
   .menu-links > a:hover {
-    color: #6070ff;
+    color: #3347fa;
   }
 
   .headline-container {

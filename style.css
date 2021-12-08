@@ -50,15 +50,17 @@ body {
   color: #6070ff;
   font-size: 1rem;
   font-style: normal;
+  font-weight: 500;
   line-height: 25px;
   text-decoration: none;
   font-weight: bold;
-  transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out, color 200ms ease-out;
   display: inline-block;
 }
 
 .logo:hover {
   transform: scale(1.1);
+  color: #3347fa;
 }
 
 /* Menu container */
@@ -166,6 +168,12 @@ body {
 .link {
   color: #7f8cff;
   text-decoration: none;
+  font-weight: 500;
+  transition: color 200ms ease-out;
+}
+
+.link:hover {
+  color: #3347fa;
 }
 
 /* Network placeholder */
@@ -392,10 +400,16 @@ body {
   text-decoration: none;
   font-size: 0.85rem;
   padding: 4px 12px;
-  background-color: #d9d9f5;
+  background-color: #ebebff;
   border-radius: 8px;
-  opacity: 0.5;
+  font-weight: 500;
   color: #6070ff;
+  transition: color 200ms ease-out, background-color 200ms ease-out;
+}
+
+.tag-btn:hover {
+  color: #fff;
+  background-color: #6070ff;
 }
 
 /* project buttom placeholder */
@@ -413,16 +427,16 @@ body {
   border: 1px solid #6070ff;
   border-radius: 8px;
   font-size: 1rem;
+  font-weight: 500;
   background-color: transparent;
-  color: #396df2;
+  color: #6070ff;
   cursor: pointer;
   text-decoration: none;
-  transition: background-color 500ms ease;
+  transition: background-color 500ms ease-out, color 500ms ease-out;
 }
 
 .project-buttom:hover {
   background-color: #6070ff;
-  opacity: 0.7;
   color: #fff;
 }
 
@@ -431,16 +445,16 @@ body {
   border: 1px solid #6070ff;
   border-radius: 8px;
   font-size: 1rem;
+  font-weight: 500;
   background-color: transparent;
   color: #396df2;
   cursor: pointer;
   text-decoration: none;
-  transition: background-color 500ms ease;
+  transition: background-color 500ms ease, color 500ms ease-out;
 }
 
 .project-buttom-b:hover {
   background-color: #6070ff;
-  opacity: 0.7;
   color: #fff;
 }
 
@@ -648,17 +662,17 @@ body {
   border-radius: 8px;
   letter-spacing: 1.5px;
   font-size: 1rem;
+  font-weight: 500;
   color: #6070ff;
   cursor: pointer;
-  transition: background-color 500ms ease;
+  transition: background-color 500ms ease-out, color 500ms ease-out;
 }
 
 .contact-button:hover {
-  background: #6070ff;
+  background-color: #3e50f1;
   color: #fff;
 }
 
-button.contact-button:active {
-  background: #2230d2;
-  color: #fff;
+.contact-button:focus {
+  border: solid 1px #fff;
 }
