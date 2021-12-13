@@ -1,7 +1,18 @@
 /* Large mobile screen */
 @media only screen and (max-width: 992px) {
-  .menu-links {
+  .menu-active{
     display: none;
+  }
+
+  .menu-links {
+    list-style: none;
+    margin-top: 40px;
+  }
+
+  .menu-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
   }
 
   .work-projects {
@@ -28,7 +39,7 @@
     display: none;
   }
 
-  .menu-contianer {
+  .menu-container {
     height: 100%;
     padding: 10px 12px;
     flex-grow: 1;
