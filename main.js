@@ -1,6 +1,6 @@
   const mobilMenu = function () {
   const mobileMenu = document.querySelector("#mobile-links");
-  const links = document.querySelectorAll("#mobile-links li a");
+  const links = document.querySelectorAll("#mobile-links li");
   const activeLinks = document.querySelectorAll(".menu-links");
   const toggleBtn = document.querySelector(".mobile-hamburguer");
   
@@ -13,7 +13,7 @@
 
   links.forEach((link) => {
     link.addEventListener("click", () => {
-      mobileMenu.classList.remove("mobile-menu-link");
+      
     });
   });
 
