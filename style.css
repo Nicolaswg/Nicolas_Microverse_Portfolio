@@ -79,12 +79,12 @@ html {
 
 /* My menu */
 .mobile-hamburguer {
-position: absolute;
-top: 20px;
-right: -40px;
-transform: translate(-50%,-50%);
-height: 80px;
-width: 80px;
+  position: absolute;
+  top: 20px;
+  right: -40px;
+  transform: translate(-50%, -50%);
+  height: 80px;
+  width: 80px;
 }
 
 .mobile-menu-link {
@@ -106,25 +106,25 @@ width: 80px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   background: #6070ff;
-  box-shadow: 0 2px 2px #00000033;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .mobile-hamburguer span:nth-child(1) {
-  transform: translate(-50%,-50%) translateY(-10px);
-  transition: .2s;
+  transform: translate(-50%, -50%) translateY(-10px);
+  transition: 0.2s;
 }
 
 .mobile-hamburguer span:nth-child(4) {
   transform: translate(-50%, 50%) translateY(5px);
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .mobile-hamburguer.active span:nth-child(1) {
-  transform: translate(-50%,-50%) translateY(-20px);
+  transform: translate(-50%, -50%) translateY(-20px);
   opacity: 0;
 }
 
@@ -134,7 +134,7 @@ width: 80px;
 }
 
 .mobile-hamburguer.active span:nth-child(2) {
-  transform: translate(-50%,-50%) rotate(50deg) translateY(5px);
+  transform: translate(-50%, -50%) rotate(50deg) translateY(5px);
   transition-delay: 200ms;
 }
 
