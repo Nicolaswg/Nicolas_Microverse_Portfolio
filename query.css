@@ -12,6 +12,10 @@
     font-size: 2rem;
   }
 
+  .links-active {
+    display: none;
+  }
+
   .work-projects {
     height: 600px;
   }
