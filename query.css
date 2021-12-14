@@ -1,7 +1,19 @@
 /* Large mobile screen */
 @media only screen and (max-width: 992px) {
   .menu-links {
+    list-style: none;
+    margin-top: 40px;
+  }
+
+  .menu-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+
+  .links-active {
     display: none;
+    list-style: none;
   }
 
   .work-projects {
@@ -28,7 +40,15 @@
     display: none;
   }
 
-  .menu-contianer {
+  .desktop-menu {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-right: 20rem;
+    gap: 5rem;
+  }
+
+  .menu-container {
     height: 100%;
     padding: 10px 12px;
     flex-grow: 1;
