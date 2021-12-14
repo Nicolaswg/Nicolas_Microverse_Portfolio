@@ -79,14 +79,12 @@ html {
 
 /* My menu */
 .mobile-hamburguer {
-  width: 40px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2.5px;
-  padding-top: 6px;
-  cursor: pointer;
+position: absolute;
+top: 20px;
+right: -40px;
+transform: translate(-50%,-50%);
+height: 80px;
+width: 80px;
 }
 
 .mobile-menu-link {
@@ -97,29 +95,52 @@ html {
   top: 2.8rem;
   background-color: #6070ffca;
   padding: 128px 0 0 23px;
-  transition: 0.5s;
+  transition: all 1s ease;
 }
 
 /* Toolbar menu layout */
-.line-1 {
-  width: 25px;
-  height: 3.5px;
-  background-color: #6070ff;
-  list-style: none;
+.mobile-hamburguer span {
+  display: block;
+  width: 30px;
+  height: 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #6070ff;
+  box-shadow: 0 2px 2px #00000033;
+  cursor: pointer;
+  transition: .5s;
 }
 
-.line-2 {
-  width: 25px;
-  height: 3.5px;
-  list-style: none;
-  background-color: #6070ff;
+.mobile-hamburguer span:nth-child(1) {
+  transform: translate(-50%,-50%) translateY(-10px);
+  transition: .2s;
 }
 
-.line-3 {
-  width: 25px;
-  height: 3.5px;
-  list-style: none;
-  background-color: #6070ff;
+.mobile-hamburguer span:nth-child(4) {
+  transform: translate(-50%, 50%) translateY(5px);
+  transition: .2s;
+}
+
+.mobile-hamburguer.active span:nth-child(1) {
+  transform: translate(-50%,-50%) translateY(-20px);
+  opacity: 0;
+}
+
+.mobile-hamburguer.active span:nth-child(4) {
+  transform: translate(-50%, 50%) translateY(20px);
+  opacity: 0;
+}
+
+.mobile-hamburguer.active span:nth-child(2) {
+  transform: translate(-50%,-50%) rotate(50deg) translateY(5px);
+  transition-delay: 200ms;
+}
+
+.mobile-hamburguer.active span:nth-child(3) {
+  transform: translate(-50%, 50%) rotate(-50deg) translateY(-5px);
+  transition-delay: 200ms;
 }
 
 /* Headline */

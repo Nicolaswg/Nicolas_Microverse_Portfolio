@@ -13,7 +13,7 @@
 
   links.forEach((link) => {
     link.addEventListener("click", () => {
-      
+
     });
   });
 
@@ -25,6 +25,12 @@
         link.classList.toggle("links-active");
       });
     }
+  });
+
+  $(document).ready(function(){
+    $(".mobile-hamburguer").click(function(){
+      $(".mobile-hamburguer").toggleClass("active")
+    });
   });
 };
 
