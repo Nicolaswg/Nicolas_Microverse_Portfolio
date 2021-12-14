@@ -27,7 +27,7 @@ const mobilMenu = function menu() {
         link.classList.toggle('links-active');
       });
     }
-});
+  });
 };
 
 mobilMenu();
