@@ -4,12 +4,15 @@ const mobilMenu = function menu() {
   const activeLinks = document.querySelectorAll('.menu-links');
   const toggleBtn = document.querySelector('.mobile-hamburguer');
   const projectContent = document.querySelector('#main');
+  const menuClose = document.querySelector('.close-menu');
 
   toggleBtn.addEventListener('click', () => {
     mobileMenu.classList.toggle('mobile-menu-link');
     activeLinks.forEach((link) => {
       link.classList.toggle('links-active');
       projectContent.classList.toggle('main');
+      menuClose.classList.toggle('links-active')
+      toggleBtn.classList.toggle('links-active');
     });
   });
 
@@ -18,11 +21,24 @@ const mobilMenu = function menu() {
       mobileMenu.classList.toggle('mobile-menu-link');
       activeLinks.forEach((link) => {
         link.classList.toggle('links-active');
-        projectContent.classList.toggle('main')
+        projectContent.classList.toggle('main');
+        menuClose.classList.toggle('links-active');
+        toggleBtn.classList.toggle('links-active');
       });
       toggleBtn.classList.toggle('active');
     });
   });
+
+  menuClose.addEventListener('click', () => {
+    mobileMenu.classList.toggle('mobile-menu-link');
+    activeLinks.forEach((link) => {
+      link.classList.toggle('links-active');
+      projectContent.classList.toggle('main');
+      menuClose.classList.toggle('links-active')
+      toggleBtn.classList.toggle('links-active');
+    });
+  });
+
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Tab') {
       mobileMenu.classList.toggle('mobile-menu-link');

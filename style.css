@@ -38,6 +38,16 @@ html {
   transition: 0.5s;
 }
 
+.close-menu {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  position: absolute;
+  top: 5%;
+  right: 2%;
+}
+
 /* Logo container */
 .logo-container {
   width: 100px;
@@ -127,26 +137,6 @@ html {
   transform: translate(-50%, 50%) translateY(5px);
   transition: 0.2s;
 }
-
-/* .mobile-hamburguer.active span:nth-child(1) {
-  transform: translate(-50%, -50%) translateY(-20px);
-  opacity: 0;
-}
-
-.mobile-hamburguer.active span:nth-child(4) {
-  transform: translate(-50%, 50%) translateY(20px);
-  opacity: 0;
-}
-
-.mobile-hamburguer.active span:nth-child(2) {
-  transform: translate(-50%, -50%) rotate(50deg) translateY(5px);
-  transition-delay: 200ms;
-}
-
-.mobile-hamburguer.active span:nth-child(3) {
-  transform: translate(-50%, 50%) rotate(-50deg) translateY(-5px);
-  transition-delay: 200ms;
-} */
 
 /* Headline */
 .headline-container {
