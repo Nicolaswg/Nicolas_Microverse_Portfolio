@@ -34,7 +34,7 @@ html {
 }
 
 .main {
-  filter:blur(3px);
+  filter: blur(3px);
   transition: 0.5s;
 }
 
@@ -107,7 +107,7 @@ html {
   height: 100vh;
   position: absolute;
   left: 0;
-  top:0;
+  top: 0;
   background-color: #6070ffb7;
   padding: 128px 0 0 23px;
   transition: 0.5s;

@@ -13,6 +13,7 @@
 
   .links-active {
     display: none;
+    list-style: none;
   }
 
   .work-projects {

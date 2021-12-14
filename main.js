@@ -11,7 +11,7 @@ const mobilMenu = function menu() {
     activeLinks.forEach((link) => {
       link.classList.toggle('links-active');
       projectContent.classList.toggle('main');
-      menuClose.classList.toggle('links-active')
+      menuClose.classList.toggle('links-active');
       toggleBtn.classList.toggle('links-active');
     });
   });
@@ -34,7 +34,7 @@ const mobilMenu = function menu() {
     activeLinks.forEach((link) => {
       link.classList.toggle('links-active');
       projectContent.classList.toggle('main');
-      menuClose.classList.toggle('links-active')
+      menuClose.classList.toggle('links-active');
       toggleBtn.classList.toggle('links-active');
     });
   });
