@@ -14,7 +14,13 @@
   links.forEach((link) => {
     link.addEventListener("click", () => {
 
-    });
+      mobileMenu.classList.toggle("mobile-menu-link");
+      activeLinks.forEach((link) => {
+        link.classList.toggle("links-active");
+      });
+      
+      toggleBtn.classList.toggle('active');
+    }); 
   });
 
   document.addEventListener("keydown", (e) => {
