@@ -16,6 +16,15 @@ const mobilMenu = function () {
       mobileMenu.classList.remove("mobile-menu-link");
     });
   });
+  document.addEventListener("keydown", (e) => {
+    if(e.key === "Tab") {
+      mobileMenu.classList.toggle("mobile-menu-link");
+
+      activeLinks.forEach( (link) => {
+        link.classList.toggle("links-active");
+      });
+    }
+  });
 };
 
 mobilMenu();
