@@ -1,4 +1,4 @@
-  const mobilMenu = function () {
+  const mobilMenu = function menu() {
   const mobileMenu = document.querySelector('#mobile-links');
   const links = document.querySelectorAll('#mobile-links li');
   const activeLinks = document.querySelectorAll('.menu-links');
@@ -10,7 +10,7 @@
       link.classList.toggle('links-active');
     });
   });
-  
+
   links.forEach((link) => {
     link.addEventListener('click', () => {
       mobileMenu.classList.toggle('mobile-menu-link');
@@ -26,12 +26,6 @@
       activeLinks.forEach( (link) => {
         link.classList.toggle('links-active');
       });}
-});
-
-$(document).ready(function(){
-  $('.mobile-hamburguer').click(function(){
-    $('.mobile-hamburguer').toggleClass('active')
-  });
 });
 };
 
