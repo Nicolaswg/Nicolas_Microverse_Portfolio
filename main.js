@@ -3,11 +3,13 @@ const mobilMenu = function menu() {
   const links = document.querySelectorAll('#mobile-links li');
   const activeLinks = document.querySelectorAll('.menu-links');
   const toggleBtn = document.querySelector('.mobile-hamburguer');
+  const projectContent = document.querySelector('#main');
 
   toggleBtn.addEventListener('click', () => {
     mobileMenu.classList.toggle('mobile-menu-link');
     activeLinks.forEach((link) => {
       link.classList.toggle('links-active');
+      projectContent.classList.toggle('main');
     });
   });
 
@@ -16,6 +18,7 @@ const mobilMenu = function menu() {
       mobileMenu.classList.toggle('mobile-menu-link');
       activeLinks.forEach((link) => {
         link.classList.toggle('links-active');
+        projectContent.classList.toggle('main')
       });
       toggleBtn.classList.toggle('active');
     });

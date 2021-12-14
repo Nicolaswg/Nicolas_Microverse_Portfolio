@@ -22,20 +22,20 @@
       gtag('config', 'UA-214558582-1');
     </script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       $(document).ready(function(){
         $('.mobile-hamburguer').click(function(){
           $('.mobile-hamburguer').toggleClass('active')
         });
       });
-    </script>
+    </script> -->
   </head>
 
   <body>
     <!-- Project Header -->
     <header>
       <!-- Header toolbar -->
-      <nav>
+      <nav id='nav'>
         <div class="content header-toolbar-container">
           <div class="logo-container">
             <div class="logo-item">
@@ -50,6 +50,7 @@
               <span><a href="#"></a></span>
             </div>
             <ul id="mobile-links" class="desktop-menu">
+              <img src="" alt="menu closed">
               <li class="menu-links links-active"><a href="#work-section">Portfolio</a></li>
               <li class="menu-links links-active"><a href="#about-myself">About</a></li>
               <li class="menu-links links-active"><a href="#contact-section">Contact</a></li>
@@ -58,7 +59,7 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main id="main">
       <!-- Intro Section -->
       <section id="intro-section">
         <!-- Project Headline -->
