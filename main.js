@@ -1,4 +1,4 @@
-const mobilMenu = function () {
+  const mobilMenu = function () {
   const mobileMenu = document.querySelector("#mobile-links");
   const links = document.querySelectorAll("#mobile-links li a");
   const activeLinks = document.querySelectorAll(".menu-links");
@@ -16,6 +16,7 @@ const mobilMenu = function () {
       mobileMenu.classList.remove("mobile-menu-link");
     });
   });
+
   document.addEventListener("keydown", (e) => {
     if(e.key === "Tab") {
       mobileMenu.classList.toggle("mobile-menu-link");

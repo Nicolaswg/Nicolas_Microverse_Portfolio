@@ -40,6 +40,14 @@
     display: none;
   }
 
+  .desktop-menu {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-right: 20rem;
+    gap: 5rem;
+  }
+
   .menu-container {
     height: 100%;
     padding: 10px 12px;
