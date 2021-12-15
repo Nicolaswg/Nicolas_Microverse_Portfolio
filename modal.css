@@ -307,7 +307,44 @@
     bottom: 180px;
   }
 
-  
+  .modal-btn {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    padding: 6px 5px;
+    max-width: 200px;
+    transition: background-color 500ms ease;
+  }
+
+  .modal-btn:hover {
+    background-color: #6070ff;
+    color: #fff;
+  }
+
+  .modal-btn:hover :nth-child(1) {
+    color: #fff;
+  }
+
+  .modal-btn:hover :nth-child(2) {
+    color: #fff;
+  }
+
+  .modal-btn a {
+    text-decoration: none;
+    color: #6070ff;
+  }
+
+  .fas.fa-external-link-alt {
+    color: #6070ff;
+  }
+
+  .fab.fa-github {
+    color: #6070ff;
+  }
 
   .fas.fa-times {
     position: absolute;
