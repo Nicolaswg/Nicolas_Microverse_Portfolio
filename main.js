@@ -97,24 +97,29 @@ const modalProject =[
   {
   title: 'Tonic',
   img: 'src/modal-img-a.png',
+  description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus inventore nulla doloribus quia! Ea dolor, sequi reprehenderit architecto eum magnam molestiae dolore quae officia, minus voluptatum animi reiciendis qui illo ipsam nisi soluta culpa? Incidunt, minus, eaque dolorem doloremque enim tempore ipsum debitis dignissimos recusandae laborum sit harum sequi quibusdam provident officia nam odit vitae illum magni laudantium soluta voluptatem laborum sit harum sequi quibusdam provident officia nam odit vitae illum magni laudantium soluta voluptatem.',
   pageLink: 'https://nicolaswg.github.io/Nicolas_Microverse_Portfolio/',
   sourcesLink: 'https://github.com/Nicolaswg/Nicolas_Microverse_Portfolio',
 },
 {
   title: 'Multi-Post Stories',
   img: 'src/portfolio_img_b.PNG',
+  description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus inventore nulla doloribus quia! Ea dolor, sequi reprehenderit architecto eum magnam molestiae dolore quae officia, minus voluptatum animi reiciendis qui illo ipsam nisi soluta culpa? Incidunt, minus, eaque dolorem doloremque enim tempore ipsum debitis dignissimos recusandae laborum sit harum sequi quibusdam provident officia nam odit vitae illum magni laudantium soluta voluptatem laborum sit harum sequi quibusdam provident officia nam odit vitae illum magni laudantium soluta voluptatem.',
   pageLink: 'https://nicolaswg.github.io/Nicolas_Microverse_Portfolio/',
   sourcesLink: 'https://github.com/Nicolaswg/Nicolas_Microverse_Portfolio',
 },
+
 {
   title: 'Tonic',
   img: 'src/portfolio_img_c.PNG',
+  description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus inventore nulla doloribus quia! Ea dolor, sequi reprehenderit architecto eum magnam molestiae dolore quae officia, minus voluptatum animi reiciendis qui illo ipsam nisi soluta culpa? Incidunt, minus, eaque dolorem doloremque enim tempore ipsum debitis dignissimos recusandae laborum sit harum sequi quibusdam provident officia nam odit vitae illum magni laudantium soluta voluptatem laborum sit harum sequi quibusdam provident officia nam odit vitae illum magni laudantium soluta voluptatem.',
   pageLink: 'https://nicolaswg.github.io/Nicolas_Microverse_Portfolio/',
   sourcesLink: 'https://github.com/Nicolaswg/Nicolas_Microverse_Portfolio',
 },
 {
   title: 'Multi-Post Stories',
   img: 'src/portfolio_img_d.PNG',
+  description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus inventore nulla doloribus quia! Ea dolor, sequi reprehenderit architecto eum magnam molestiae dolore quae officia, minus voluptatum animi reiciendis qui illo ipsam nisi soluta culpa? Incidunt, minus, eaque dolorem doloremque enim tempore ipsum debitis dignissimos recusandae laborum sit harum sequi quibusdam provident officia nam odit vitae illum magni laudantium soluta voluptatem laborum sit harum sequi quibusdam provident officia nam odit vitae illum magni laudantium soluta voluptatem.',
   pageLink: 'https://nicolaswg.github.io/Nicolas_Microverse_Portfolio/',
   sourcesLink: 'https://github.com/Nicolaswg/Nicolas_Microverse_Portfolio',
 }]
@@ -138,9 +143,7 @@ projectBtn.forEach((btn,index) => {
       <div class="modal-img">
         <img src="${modalProject[index].img}" alt="modal img">
       </div>
-      <p class="modal-description">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus inventore nulla doloribus quia! Ea dolor, sequi reprehenderit architecto eum magnam molestiae dolore quae officia, minus voluptatum animi reiciendis qui illo ipsam nisi soluta culpa? Incidunt, minus, eaque dolorem doloremque enim tempore ipsum debitis dignissimos recusandae laborum sit harum sequi quibusdam provident officia nam odit vitae illum magni laudantium soluta voluptatem laborum sit harum sequi quibusdam provident officia nam odit vitae illum magni laudantium soluta voluptatem.
-      </p>
+      <p class="modal-description">${modalProject[index].description}</p>
       <ul class="modal-skills">
         <li>
           <p href="">html</p>
