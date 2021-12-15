@@ -140,11 +140,11 @@ project1.addEventListener('click', () => {
     </div>
   </div>`);
   
-  /*const modalContainer = document.querySelector('#modal-container')
+  const modalContainer = document.querySelector('#modal-container')
   const modalRemover = document.querySelector('#close-menu');
   modalRemover.addEventListener('click', () => {
     modalContainer.remove();
-});*/
+});
 
 })
 
