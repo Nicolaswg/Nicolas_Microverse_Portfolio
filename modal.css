@@ -20,6 +20,7 @@
     justify-content: center;
     align-items: center;
     z-index: 2;
+    transition: all 1s ease;
   }
 
   .modal {
@@ -33,20 +34,12 @@
     position: absolute;
     border-radius: 10px;
     flex-wrap: wrap;
+    transition: all 1s ease;
   }
 
   .modal-title {
     margin: 20px 0 5px 20px;
     font-size: 1.6rem;
-  }
-
-  .modal-title:before {
-    content: 'X';
-    position: absolute;
-    right: 20px;
-    opacity: 0.6;
-    font-size: 1.3rem;
-    cursor: pointer;
   }
 
   .modal-mark {
@@ -80,7 +73,8 @@
 
   .modal-img img {
     width: 90%;
-    height: 200px;
+    height: 210px;
+    max-width: 500px;
     margin: 10px 0px
   }
 
@@ -105,7 +99,7 @@
     list-style: none;
   }
 
-  .modal-skills li a {
+  .modal-skills li p {
   text-decoration: none;
   font-size: 0.85rem;
   padding: 4px 12px;
@@ -126,9 +120,11 @@
 
   .modal-buttons {
     display: flex;
+    width: 100%;
     justify-content: center;
-    align-items: center;
-    margin-top: 3.5rem;
+    margin-top: 2.5rem;
+    position: absolute;
+    bottom: 20px;
   }
 
   .modal-btn {
@@ -141,17 +137,46 @@
     margin: 5px;
     border-radius: 8px;
     padding: 12px 10px;
+    max-width: 200px;
+    transition: background-color 500ms ease;
+  }
+
+  .modal-btn:hover {
+    background-color: #6070ff;
+    color: #fff;
+  }
+
+  .modal-btn:hover :nth-child(1) {
+    color: #fff;
+  }
+
+  .modal-btn:hover :nth-child(2) {
+    color: #fff;
   }
 
   .modal-btn a {
     text-decoration: none;
-  }
-
-  .fas {
     color: #6070ff;
   }
 
-  .fab {
+  .fas.fa-external-link-alt {
     color: #6070ff;
+  }
+
+  .fab.fa-github {
+    color: #6070ff;
+  }
+
+  .fas.fa-times {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    opacity: 0.6;
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+
+  .modal-close {
+    display: none;
   }
 }
