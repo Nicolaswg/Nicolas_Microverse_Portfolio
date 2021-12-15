@@ -301,12 +301,12 @@
 
   .modal-buttons {
     display: flex;
-    gap: 10px;
+    gap: 5px;
     justify-content: center;
-    width: 30%;
+    width: 40%;
     position: absolute;
-    right: 80px;
-    bottom: 180px;
+    right: 20px;
+    bottom: 250px;
   }
 
   .modal-btn {
@@ -317,7 +317,7 @@
     gap: 0.5rem;
     border: 1px solid #6070ff;
     border-radius: 8px;
-    padding: 10px 20px;
+    padding: 5px 10px;
     max-width: 200px;
     transition: background-color 500ms ease;
   }
