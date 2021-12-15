@@ -139,7 +139,7 @@ projectBtn.forEach((btn,index) => {
         <img src="${modalProject[index].img}" alt="modal img">
       </div>
       <p class="modal-description">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus inventore nulla doloribus quia! Ea dolor, sequi reprehenderit architecto eum magnam molestiae dolore quae officia, minus voluptatum animi reiciendis qui illo ipsam nisi soluta culpa? Incidunt, minus, eaque dolorem doloremque enim tempore ipsum debitis dignissimos recusandae laborum sit harum sequi quibusdam provident officia nam odit vitae illum magni laudantium soluta voluptatem.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus inventore nulla doloribus quia! Ea dolor, sequi reprehenderit architecto eum magnam molestiae dolore quae officia, minus voluptatum animi reiciendis qui illo ipsam nisi soluta culpa? Incidunt, minus, eaque dolorem doloremque enim tempore ipsum debitis dignissimos recusandae laborum sit harum sequi quibusdam provident officia nam odit vitae illum magni laudantium soluta voluptatem laborum sit harum sequi quibusdam provident officia nam odit vitae illum magni laudantium soluta voluptatem.
       </p>
       <ul class="modal-skills">
         <li>
