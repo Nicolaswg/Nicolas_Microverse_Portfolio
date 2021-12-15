@@ -1,5 +1,8 @@
 // Main.js variables
-const projectBtn = document.querySelectorAll('.project-buttom');
+const project1 = document.getElementById('project-1');
+const project2 = document.getElementById('project-2');
+const project3 = document.getElementById('project-3');
+const project4 = document.getElementById('project-4');
 
 // Mobiel menu function
 const mobilMenu = function menu() {
@@ -95,10 +98,8 @@ const printModal = content => {
 
 // Modal projects event
 // First Modal
-
-projectBtn.forEach((btn)=>{
-  btn.addEventListener('click', ()=>{
-    printModal(`<h2 class="modal-title">Tonic</h2>
+project1.addEventListener('click', () => {
+  printModal(`<h2 class="modal-title">Tonic</h2>
   <i id ="close-menu" class="fas fa-times"></i>
   <ul class="modal-mark">
     <li>
@@ -138,10 +139,12 @@ projectBtn.forEach((btn)=>{
       <i class="fab fa-github"></i>
     </div>
   </div>`);
-  });
-});
-projectBtn.addEventListener('click', () => {
   
+  const modalContainer = document.querySelector('#modal-container')
+  const modalRemover = document.querySelector('#close-menu');
+  modalRemover.addEventListener('click', () => {
+    modalContainer.remove();
+});
 })
 
 mobilMenu();
