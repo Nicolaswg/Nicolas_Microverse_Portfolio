@@ -1,8 +1,5 @@
 // Main.js variables
-const project1 = document.getElementById('project-1');
-const project2 = document.getElementById('project-2');
-const project3 = document.getElementById('project-3');
-const project4 = document.getElementById('project-4');
+const projectBtn = document.querySelectorAll('.project-buttom');
 
 // Mobiel menu function
 const mobilMenu = function menu() {
@@ -96,55 +93,81 @@ const printModal = content => {
   }
 }
 
+const modalProject =[
+  {
+  title: 'Tonic',
+  img: 'src/modal-img-a.png',
+  pageLink: 'https://nicolaswg.github.io/Nicolas_Microverse_Portfolio/',
+  sourcesLink: 'https://github.com/Nicolaswg/Nicolas_Microverse_Portfolio',
+},
+{
+  title: 'Multi-Post Stories',
+  img: 'src/portfolio_img_b.PNG',
+  pageLink: 'https://nicolaswg.github.io/Nicolas_Microverse_Portfolio/',
+  sourcesLink: 'https://github.com/Nicolaswg/Nicolas_Microverse_Portfolio',
+},
+{
+  title: 'Tonic',
+  img: 'src/portfolio_img_c.PNG',
+  pageLink: 'https://nicolaswg.github.io/Nicolas_Microverse_Portfolio/',
+  sourcesLink: 'https://github.com/Nicolaswg/Nicolas_Microverse_Portfolio',
+},
+{
+  title: 'Multi-Post Stories',
+  img: 'src/portfolio_img_d.PNG',
+  pageLink: 'https://nicolaswg.github.io/Nicolas_Microverse_Portfolio/',
+  sourcesLink: 'https://github.com/Nicolaswg/Nicolas_Microverse_Portfolio',
+}]
 // Modal projects event
 // First Modal
-project1.addEventListener('click', () => {
-  printModal(`<h2 class="modal-title">Tonic</h2>
-  <i id ="close-menu" class="fas fa-times"></i>
-  <ul class="modal-mark">
-    <li>
-      <p>CANOPY</p>
-    </li>
-    <li>
-      <p>Back End Dev</p>
-    </li>
-    <li>
-      <p>2015</p>
-    </li>
-  </ul>
-  <div class="modal-img">
-    <img src="src/modal-img-a.png" alt="modal img">
-  </div>
-  <p class="modal-description">
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus inventore nulla doloribus quia! Ea dolor, sequi reprehenderit architecto eum magnam molestiae dolore quae officia, minus voluptatum animi reiciendis qui illo ipsam nisi soluta culpa? Incidunt, minus, eaque dolorem doloremque enim tempore ipsum debitis dignissimos recusandae laborum sit harum sequi quibusdam provident officia nam odit vitae illum magni laudantium soluta voluptatem.
-  </p>
-  <ul class="modal-skills">
-    <li>
-      <p href="">html</p>
-    </li>
-    <li>
-      <p href="">css</p>
-    </li>
-    <li>
-      <p href="">javascript</p>
-    </li>
-  </ul>
-  <div class="modal-buttons">
-    <div class="modal-btn">
-      <a href="#">See live</a>
-      <i class="fas fa-external-link-alt"></i>
-    </div>
-    <div class="modal-btn">
-      <a href="#">See Source</a>
-      <i class="fab fa-github"></i>
-    </div>
-  </div>`);
-  
+projectBtn.forEach((btn,index) => {
+  btn.addEventListener('click', () => {
+      printModal(`<h2 class="modal-title">${modalProject[index].title}</h2>
+      <i id ="close-menu" class="fas fa-times"></i>
+      <ul class="modal-mark">
+        <li>
+          <p>CANOPY</p>
+        </li>
+        <li>
+          <p>Back End Dev</p>
+        </li>
+        <li>
+          <p>2015</p>
+        </li>
+      </ul>
+      <div class="modal-img">
+        <img src="${modalProject[index].img}" alt="modal img">
+      </div>
+      <p class="modal-description">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus inventore nulla doloribus quia! Ea dolor, sequi reprehenderit architecto eum magnam molestiae dolore quae officia, minus voluptatum animi reiciendis qui illo ipsam nisi soluta culpa? Incidunt, minus, eaque dolorem doloremque enim tempore ipsum debitis dignissimos recusandae laborum sit harum sequi quibusdam provident officia nam odit vitae illum magni laudantium soluta voluptatem.
+      </p>
+      <ul class="modal-skills">
+        <li>
+          <p href="">html</p>
+        </li>
+        <li>
+          <p href="">css</p>
+        </li>
+        <li>
+          <p href="">javascript</p>
+        </li>
+      </ul>
+      <div class="modal-buttons">
+        <div class="modal-btn">
+          <a href="${modalProject[index].pageLink}">See live</a>
+          <i class="fas fa-external-link-alt"></i>
+        </div>
+        <div class="modal-btn">
+          <a href="${modalProject[index].sourcesLink}">See Source</a>
+          <i class="fab fa-github"></i>
+        </div>
+      </div>`);
+
   const modalContainer = document.querySelector('#modal-container')
   const modalRemover = document.querySelector('#close-menu');
   modalRemover.addEventListener('click', () => {
     modalContainer.remove();
 });
-})
-
+  });
+});
 mobilMenu();
