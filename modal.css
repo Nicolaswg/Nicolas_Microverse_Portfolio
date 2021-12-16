@@ -323,26 +323,29 @@
     width: 100%;
     margin: 10px;
   }
+
+  .container{
+    display: flex;
+    width: 100%;
+    
+  }
   
   .modal-description-container {
-    width: 50%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     margin-left: 20px;
   }
 
   .modal-description {
-    width: 80%;
     text-align: start;
     margin: 0px 10px 0 10px;
-    letter-spacing: 3px;
-    line-height: 40px;
     font-size: 0.95rem;
     opacity: 0.7;
   }
 
   .modal-skills-container {
-    float: right;
+    width: 30%;
     gap: 1rem;
     margin: 10px 0 20px 10px;
     background-color: aqua;

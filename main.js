@@ -149,9 +149,12 @@ projectBtn.forEach((btn, index) => {
     <div class="modal-img">
       <img src="${modalProject[index].img}" alt="modal-img">
     </div>
+
+    <div class="container">
     <div class="modal-description-container">
       <p class="modal-description">${modalProject[index].description}</p>
     </div>
+    
     <div class="modal-skills-container">
     <ul class="modal-skills">
     <li>
@@ -163,16 +166,18 @@ projectBtn.forEach((btn, index) => {
     <li>
       <p>javascript</p>
     </li>
-  </ul></div>
-    <div class="modal-buttons-container">
-        <div class="modal-btn">
-          <a href="${modalProject[index].pageLink}">See live</a>
-          <i class="fas fa-external-link-alt"></i>
-        </div>
-        <div class="modal-btn">
-          <a href="${modalProject[index].sourcesLink}">See sources</a>
-          <i class="fab fa-github"></i>
-        </div>
+  </ul>
+  <div class="modal-buttons-container">
+  <div class="modal-btn">
+    <a href="${modalProject[index].pageLink}">See live</a>
+    <i class="fas fa-external-link-alt"></i>
+  </div>
+  <div class="modal-btn">
+    <a href="${modalProject[index].sourcesLink}">See sources</a>
+    <i class="fab fa-github"></i>
+  </div>
+</div>
+  </div>
     </div>`);
 
     const modalContainer = document.querySelector('#modal-container');
