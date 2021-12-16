@@ -1,7 +1,22 @@
 // Main.js variables
 const projectBtn = document.querySelectorAll('.project-buttom');
+const form = document.getElementById('form');
+const email = document.getElementById('email');
+const validationMsg = document.getElementById('validation-message');
 
-// Mobiel menu function
+// Form Validation
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const formMessage = ['Email should be in lower case', 'Submition aproved'];
+  const emailAddres = email.value;
+  if (emailAddres.toLowerCase() !== emailAddres) {
+    validationMsg.classList.add('contact-button-message');
+    validationMsg.innerHTML = `${formMessage[0]}`;
+  } else {
+    validationMsg.innerHTML = `${formMessage[1]}`;
+  }
+});
+// Mobile menu function
 const mobilMenu = function menu() {
   const mobileMenu = document.querySelector('#mobile-links');
   const links = document.querySelectorAll('#mobile-links li');
@@ -187,4 +202,40 @@ projectBtn.forEach((btn, index) => {
     });
   });
 });
+
+function storageAvailable(type) {
+  let storage;
+  try {
+    storage = window[type];
+    const x = '__storage_test__';
+    storage.setItem(x, x);
+    storage.removeItem(x);
+    return true;
+  } catch (e) {
+    return e instanceof DOMException && (e.code === 22
+      || e.code === 1014 || e.name === 'QuotaExceededError'
+      || e.name === 'NS_ERROR_DOM_QUOTA_REACHED')
+      && (storage && storage.length !== 0);
+  }
+}
+
+if (storageAvailable('localStorage')) {
+  const input = [form.fullname, form.email, form.message];
+  input.forEach((input) => {
+    input.addEventListener('input', () => {
+      const objData = {
+        fullname: form.fullname.value,
+        email: form.email.value,
+        message: form.message.value,
+      };
+      localStorage.setItem('data', JSON.stringify(objData));
+    });
+  });
+  const getData = JSON.parse(localStorage.getItem('data'));
+
+  form.fullname.value = getData.fullname;
+  form.email.value = getData.email;
+  form.message.value = getData.message;
+}
+
 mobilMenu();

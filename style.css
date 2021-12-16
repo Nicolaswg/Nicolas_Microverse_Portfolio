@@ -697,6 +697,7 @@ html {
   color: #6070ff;
   cursor: pointer;
   transition: background-color 500ms ease-out, color 500ms ease-out;
+  z-index: 5;
 }
 
 .contact-button:hover {
@@ -706,4 +707,15 @@ html {
 
 .contact-button:focus {
   border: solid 1px #fff;
+}
+
+.contact-button-message {
+  font-size: 10px;
+  padding: 10px;
+  background-color: #e210109d;
+  border: 0.5px solid #e21010;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 1s ease;
+  margin: 5px;
 }
