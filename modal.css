@@ -50,6 +50,10 @@
     align-items: center;
   }
 
+  .modal-skills li {
+    list-style: none;
+  }
+
   .modal-mark li:nth-child(1) {
     list-style: none;
     font-size: 0.8rem;
@@ -75,7 +79,7 @@
     width: 90%;
     height: 210px;
     max-width: 500px;
-    margin: 10px 0px;
+    margin: 10px 0;
   }
 
   .modal-description {
@@ -95,10 +99,6 @@
     position: relative;
   }
 
-  .modal-skills li {
-    list-style: none;
-  }
-
   .modal-skills li p {
     text-decoration: none;
     font-size: 0.85rem;
@@ -109,7 +109,7 @@
     color: #6070ff;
   }
 
-  .modal-skills:before {
+  .modal-skills::before {
     content: "";
     background-color: #ebecf0;
     width: 100%;
@@ -223,6 +223,10 @@
     align-items: center;
   }
 
+  .modal-skills li {
+    list-style: none;
+  }
+
   .modal-mark li:nth-child(1) {
     list-style: none;
     font-size: 0.8rem;
@@ -276,10 +280,6 @@
     bottom: 350px;
   }
 
-  .modal-skills li {
-    list-style: none;
-  }
-
   .modal-skills li p {
     text-decoration: none;
     font-size: 0.85rem;
@@ -290,7 +290,7 @@
     color: #6070ff;
   }
 
-  .modal-skills:before {
+  .modal-skills::before {
     content: "";
     background-color: #ebecf0;
     width: 100%;
