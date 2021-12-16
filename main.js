@@ -96,7 +96,7 @@ const printModal = (content) => {
 const modalProject = [
   {
     title: 'Tonic',
-    img: 'src/modal-img-a.png',
+    img: 'src/portfolio_img_a.PNG',
     description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus inventore nulla doloribus quia! Ea dolor, sequi reprehenderit architecto eum magnam molestiae dolore quae officia, minus voluptatum animi reiciendis qui illo ipsam nisi soluta culpa? Incidunt, minus, eaque dolorem doloremque enim tempore ipsum debitis dignissimos recusandae laborum sit harum sequi quibusdam provident officia nam odit vitae illum magni laudantium soluta voluptatem laborum sit harum sequi quibusdam provident officia nam odit vitae illum magni laudantium soluta voluptatem.',
     pageLink: 'https://nicolaswg.github.io/Nicolas_Microverse_Portfolio/',
     sourcesLink: 'https://github.com/Nicolaswg/Nicolas_Microverse_Portfolio',
@@ -116,7 +116,7 @@ const modalProject = [
     sourcesLink: 'https://github.com/Nicolaswg/Nicolas_Microverse_Portfolio',
   },
   {
-    title: 'Multi-Post Stories',
+    title: 'Tonic',
     img: 'src/portfolio_img_d.PNG',
     description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus inventore nulla doloribus quia! Ea dolor, sequi reprehenderit architecto eum magnam molestiae dolore quae officia, minus voluptatum animi reiciendis qui illo ipsam nisi soluta culpa? Incidunt, minus, eaque dolorem doloremque enim tempore ipsum debitis dignissimos recusandae laborum sit harum sequi quibusdam provident officia nam odit vitae illum magni laudantium soluta voluptatem laborum sit harum sequi quibusdam provident officia nam odit vitae illum magni laudantium soluta voluptatem.',
     pageLink: 'https://nicolaswg.github.io/Nicolas_Microverse_Portfolio/',
@@ -126,8 +126,14 @@ const modalProject = [
 // First Modal
 projectBtn.forEach((btn, index) => {
   btn.addEventListener('click', () => {
-    printModal(`<h2 class="modal-title">${modalProject[index].title}</h2>
-      <i id ="close-menu" class="fas fa-times"></i>
+    printModal(`<div class="modal-header-container">
+    <div class="modal-title-container">
+      <h2 class="modal-title">${modalProject[index].title}</h2></div>
+      <div class="modal-header-icon">
+        <i id ="close-menu" class="fas fa-times"></i>
+      </div>
+    </div>
+    <div class="modal-subtitle-container">
       <ul class="modal-mark">
         <li>
           <p>CANOPY</p>
@@ -139,31 +145,34 @@ projectBtn.forEach((btn, index) => {
           <p>2015</p>
         </li>
       </ul>
-      <div class="modal-img">
-        <img src="${modalProject[index].img}" alt="modal img">
-      </div>
+    </div>
+    <div class="modal-img">
+      <img src="${modalProject[index].img}" alt="modal-img">
+    </div>
+    <div class="modal-description-container">
       <p class="modal-description">${modalProject[index].description}</p>
       <ul class="modal-skills">
         <li>
-          <p href="">html</p>
+          <p>html</p>
         </li>
         <li>
-          <p href="">css</p>
+          <p>css</p>
         </li>
         <li>
-          <p href="">javascript</p>
+          <p>javascript</p>
         </li>
       </ul>
-      <div class="modal-buttons">
+    </div>
+    <div class="modal-buttons-container">
         <div class="modal-btn">
           <a href="${modalProject[index].pageLink}">See live</a>
           <i class="fas fa-external-link-alt"></i>
         </div>
         <div class="modal-btn">
-          <a href="${modalProject[index].sourcesLink}">See Source</a>
+          <a href="${modalProject[index].sourcesLink}">See sources</a>
           <i class="fab fa-github"></i>
         </div>
-      </div>`);
+    </div>`);
 
     const modalContainer = document.querySelector('#modal-container');
     const modalRemover = document.querySelector('#close-menu');
