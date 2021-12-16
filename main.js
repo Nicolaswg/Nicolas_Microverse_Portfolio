@@ -222,7 +222,7 @@ function storageAvailable(type) {
 if (storageAvailable('localStorage')) {
   const input = [form.fullname, form.email, form.message];
   input.forEach((input) => {
-    input.addEventListener('submit', () => {
+    input.addEventListener('input', () => {
       const objData = {
         fullname: form.fullname.value,
         email: form.email.value,
@@ -231,6 +231,11 @@ if (storageAvailable('localStorage')) {
       localStorage.setItem('data', JSON.stringify(objData));
     });
   });
+  const getData = JSON.parse(localStorage.getItem('data'));
+
+  form.fullname.value = getData.fullname;
+  form.email.value = getData.email;
+  form.message.value = getData.message;
 }
 
 mobilMenu();
