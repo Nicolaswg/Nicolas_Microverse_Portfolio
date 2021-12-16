@@ -717,4 +717,6 @@ html {
   color: #fff; 
   border-radius: 5px;
   transition: all 1s ease;
+  margin: 5px;
 }
+

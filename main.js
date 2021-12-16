@@ -12,6 +12,9 @@ form.addEventListener('submit', (e) => {
   if (emailAddres.toLowerCase() !== emailAddres) {
     validationMsg.classList.add('contact-button-message');
     validationMsg.innerHTML = `${formMessage[0]}`;
+  } else {
+    validationMsg.innerHTML = `${formMessage[1]}`;
+    form.submit(); 
   }
 });
 // Mobile menu function
