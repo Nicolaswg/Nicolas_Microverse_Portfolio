@@ -97,28 +97,28 @@ const modalProject = [
   {
     title: 'Tonic',
     img: 'src/portfolio_img_a.PNG',
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus inventore nulla doloribus quia! Ea dolor, sequi reprehenderit architecto eum magnam molestiae dolore quae officia, minus voluptatum animi reiciendis qui illo ipsam nisi soluta culpa? Incidunt, minus, eaque dolorem doloremque enim tempore ipsum debitis dignissimos recusandae laborum sit harum sequi quibusdam provident officia nam odit vitae illum magni laudantium soluta voluptatem laborum sit harum sequi quibusdam provident officia nam odit vitae illum magni laudantium soluta voluptatem.',
+    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos beatae tenetur, quas, quidem incidunt maiores quo ipsum vitae exercitationem dicta perferendis quasi odio distinctio ex id dolore eum nobis soluta illum. Id sint similique suscipit, reprehenderit accusantium debitis esse quod nihil culpa quas. Porro saepe alias reprehenderit sapiente dolores non?',
     pageLink: 'https://nicolaswg.github.io/Nicolas_Microverse_Portfolio/',
     sourcesLink: 'https://github.com/Nicolaswg/Nicolas_Microverse_Portfolio',
   },
   {
     title: 'Multi-Post Stories',
     img: 'src/portfolio_img_b.PNG',
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus inventore nulla doloribus quia! Ea dolor, sequi reprehenderit architecto eum magnam molestiae dolore quae officia, minus voluptatum animi reiciendis qui illo ipsam nisi soluta culpa? Incidunt, minus, eaque dolorem doloremque enim tempore ipsum debitis dignissimos recusandae laborum sit harum sequi quibusdam provident officia nam odit vitae illum magni laudantium soluta voluptatem laborum sit harum sequi quibusdam provident officia nam odit vitae illum magni laudantium soluta voluptatem.',
+    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos beatae tenetur, quas, quidem incidunt maiores quo ipsum vitae exercitationem dicta perferendis quasi odio distinctio ex id dolore eum nobis soluta illum. Id sint similique suscipit, reprehenderit accusantium debitis esse quod nihil culpa quas. Porro saepe alias reprehenderit sapiente dolores non?',
     pageLink: 'https://nicolaswg.github.io/Nicolas_Microverse_Portfolio/',
     sourcesLink: 'https://github.com/Nicolaswg/Nicolas_Microverse_Portfolio',
   },
   {
     title: 'Tonic',
     img: 'src/portfolio_img_c.PNG',
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus inventore nulla doloribus quia! Ea dolor, sequi reprehenderit architecto eum magnam molestiae dolore quae officia, minus voluptatum animi reiciendis qui illo ipsam nisi soluta culpa? Incidunt, minus, eaque dolorem doloremque enim tempore ipsum debitis dignissimos recusandae laborum sit harum sequi quibusdam provident officia nam odit vitae illum magni laudantium soluta voluptatem laborum sit harum sequi quibusdam provident officia nam odit vitae illum magni laudantium soluta voluptatem.',
+    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos beatae tenetur, quas, quidem incidunt maiores quo ipsum vitae exercitationem dicta perferendis quasi odio distinctio ex id dolore eum nobis soluta illum. Id sint similique suscipit, reprehenderit accusantium debitis esse quod nihil culpa quas. Porro saepe alias reprehenderit sapiente dolores non?',
     pageLink: 'https://nicolaswg.github.io/Nicolas_Microverse_Portfolio/',
     sourcesLink: 'https://github.com/Nicolaswg/Nicolas_Microverse_Portfolio',
   },
   {
     title: 'Tonic',
     img: 'src/portfolio_img_d.PNG',
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus inventore nulla doloribus quia! Ea dolor, sequi reprehenderit architecto eum magnam molestiae dolore quae officia, minus voluptatum animi reiciendis qui illo ipsam nisi soluta culpa? Incidunt, minus, eaque dolorem doloremque enim tempore ipsum debitis dignissimos recusandae laborum sit harum sequi quibusdam provident officia nam odit vitae illum magni laudantium soluta voluptatem laborum sit harum sequi quibusdam provident officia nam odit vitae illum magni laudantium soluta voluptatem.',
+    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos beatae tenetur, quas, quidem incidunt maiores quo ipsum vitae exercitationem dicta perferendis quasi odio distinctio ex id dolore eum nobis soluta illum. Id sint similique suscipit, reprehenderit accusantium debitis esse quod nihil culpa quas. Porro saepe alias reprehenderit sapiente dolores non?',
     pageLink: 'https://nicolaswg.github.io/Nicolas_Microverse_Portfolio/',
     sourcesLink: 'https://github.com/Nicolaswg/Nicolas_Microverse_Portfolio',
   }];
@@ -151,18 +151,19 @@ projectBtn.forEach((btn, index) => {
     </div>
     <div class="modal-description-container">
       <p class="modal-description">${modalProject[index].description}</p>
-      <ul class="modal-skills">
-        <li>
-          <p>html</p>
-        </li>
-        <li>
-          <p>css</p>
-        </li>
-        <li>
-          <p>javascript</p>
-        </li>
-      </ul>
     </div>
+    <div class="modal-skills-container">
+    <ul class="modal-skills">
+    <li>
+      <p>html</p>
+    </li>
+    <li>
+      <p>css</p>
+    </li>
+    <li>
+      <p>javascript</p>
+    </li>
+  </ul></div>
     <div class="modal-buttons-container">
         <div class="modal-btn">
           <a href="${modalProject[index].pageLink}">See live</a>
