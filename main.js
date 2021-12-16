@@ -7,11 +7,14 @@ const validationMsg = document.getElementById('validation-message');
 // Form Validation
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  const formMessage = ['Email should be in lower case', 'Submitio aproved'];
+  const formMessage = ['Email should be in lower case', 'Submition aproved'];
   const emailAddres = email.value;
   if (emailAddres.toLowerCase() !== emailAddres) {
     validationMsg.classList.add('contact-button-message');
     validationMsg.innerHTML = `${formMessage[0]}`;
+  } else {
+    validationMsg.innerHTML = `${formMessage[1]}`;
+    form.submit(); 
   }
 });
 // Mobile menu function
