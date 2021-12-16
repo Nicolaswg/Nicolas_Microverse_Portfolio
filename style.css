@@ -30,10 +30,10 @@ html {
   position: fixed;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  z-index: 100;
+  z-index: 10;
 }
 
-.main {
+.blur {
   filter: blur(3px);
   transition: 0.5s;
 }
