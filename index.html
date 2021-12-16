@@ -384,17 +384,18 @@
             </p>
           </div>
           <div class="form-container">
-            <form action="https://formspree.io/f/mayvwled" method="POST" class="contact-form">
-              <input type="text" placeholder="Name" class="input-client-info" name="full-name" minlength="2"
+            <form id="form" action="https://formspree.io/f/mayvwled" method="POST" class="contact-form">
+              <input type="text" placeholder="hellor" class="input-client-info" name="full-name" minlength="2"
                 maxlength="30" required />
-              <input type="email" name="email" placeholder="example@gmail.com" class="input-client-info" required />
+              <input id="email" type="email" name="email" placeholder="example@gmail.com" class="input-client-info" required />
               <textarea name="message" id="message" placeholder="right your message here" class="client-message"
                 minlength="10" maxlength="500" required>
               </textarea>
               <div class="button-container">
-                <button type='button' name="submit" id="button" class="contact-button">
+                <button name="submit" id="button" class="contact-button">
                   Get It Touch
                 </button>
+                <span id="validation-message"></span>
               </div>
             </form>
           </div>

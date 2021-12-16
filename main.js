@@ -1,7 +1,20 @@
 // Main.js variables
 const projectBtn = document.querySelectorAll('.project-buttom');
+const form = document.getElementById('form');
+const email = document.getElementById('email');
+const validationMsg = document.getElementById('validation-message');
 
-// Mobiel menu function
+// Form Validation
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const formMessage = ['Email should be in lower case', 'Submitio aproved'];
+  const emailAddres = email.value;
+  if (emailAddres.toLowerCase() !== emailAddres) {
+    validationMsg.classList.add('contact-button-message');
+    validationMsg.innerHTML = `${formMessage[0]}`;
+  }
+});
+// Mobile menu function
 const mobilMenu = function menu() {
   const mobileMenu = document.querySelector('#mobile-links');
   const links = document.querySelectorAll('#mobile-links li');
