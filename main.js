@@ -124,14 +124,14 @@ const modalProject = [
     description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos beatae tenetur, quas, quidem incidunt maiores quo ipsum vitae exercitationem dicta perferendis quasi odio distinctio ex id dolore eum nobis soluta illum. Id sint similique suscipit, reprehenderit accusantium debitis esse quod nihil culpa quas. Porro saepe alias reprehenderit sapiente dolores non?',
     pageLink: 'https://nicolaswg.github.io/Nicolas_Microverse_Portfolio/',
     sourcesLink: 'https://github.com/Nicolaswg/Nicolas_Microverse_Portfolio',
-  },
+  }
   {
     title: 'Tonic',
     img: 'src/portfolio_img_c.PNG',
     description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos beatae tenetur, quas, quidem incidunt maiores quo ipsum vitae exercitationem dicta perferendis quasi odio distinctio ex id dolore eum nobis soluta illum. Id sint similique suscipit, reprehenderit accusantium debitis esse quod nihil culpa quas. Porro saepe alias reprehenderit sapiente dolores non?',
     pageLink: 'https://nicolaswg.github.io/Nicolas_Microverse_Portfolio/',
     sourcesLink: 'https://github.com/Nicolaswg/Nicolas_Microverse_Portfolio',
-  },
+  }
   {
     title: 'Tonic',
     img: 'src/portfolio_img_d.PNG',
@@ -220,12 +220,7 @@ function storageAvailable(type) {
       && (storage && storage.length !== 0);
   }
 }
-const reportDebug = ((x, y) => {
-  const result = x * y;
-  return result;
-});
 
-reportDebug('hi', 'ijijij');
 if (storageAvailable('localStorage')) {
   const input = [form.fullname, form.email, form.message];
   input.forEach((input) => {
