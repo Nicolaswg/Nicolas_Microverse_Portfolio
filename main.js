@@ -10,10 +10,12 @@ form.addEventListener('submit', (e) => {
   const formMessage = ['Email should be in lower case', 'Submition aproved'];
   const emailAddres = email.value;
   if (emailAddres.toLowerCase() !== emailAddres) {
+    validationMsg.classList.remove('contact-button-success-message');
     validationMsg.classList.add('contact-button-message');
     validationMsg.innerHTML = `${formMessage[0]}`;
   } else {
     validationMsg.innerHTML = `${formMessage[1]}`;
+    validationMsg.classList.add('contact-button-success-message');
   }
 });
 // Mobile menu function
