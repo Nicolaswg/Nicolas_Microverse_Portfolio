@@ -220,7 +220,12 @@ function storageAvailable(type) {
       && (storage && storage.length !== 0);
   }
 }
+const reportDebug = ((x, y) => {
+  const result = x * y;
+  return result;
+});
 
+reportDebug('hi', 'ijijij');
 if (storageAvailable('localStorage')) {
   const input = [form.fullname, form.email, form.message];
   input.forEach((input) => {
@@ -239,5 +244,7 @@ if (storageAvailable('localStorage')) {
   form.email.value = getData.email;
   form.message.value = getData.message;
 }
+
+// Debugging exercises
 
 mobilMenu();
